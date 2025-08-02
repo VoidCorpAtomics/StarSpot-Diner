@@ -2,26 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starspot Diner</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+        }
+        header {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            border-bottom: 2px solid #f0f;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background: #1a1a1a;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #f0f;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #111, #222);
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #aaa;
+        }
+        .menu-section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .menu-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border: 1px solid #333;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .menu-card:hover {
+            transform: scale(1.05);
+            border-color: #f0f;
+        }
+        .menu-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #333;
+            background: #0f0f0f;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Starspot Diner</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Welcome to Starspot Diner</h2>
-        <p>Your cosmic stop for classic diner flavors. Open 24/7 across the galaxy!</p>
-        <img src="assets/diner-image.jpg" alt="Starspot Diner Exterior" style="width:100%; max-width:600px;">
-    </main>
-    <footer>
-        &copy; 2025 Starspot Diner
-    </footer>
+    <header>Starspot Diner</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Specials</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="hero">
+        <h1>Welcome to Starspot Diner</h1>
+        <p>Where retro vibes meet the edge of the galaxy.</p>
+    </div>
+    <section class="menu-section">
+        <h2 style="text-align:center; margin-bottom: 30px;">Featured Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="https://via.placeholder.com/200x150?text=Void+Burger" alt="Void Burger">
+                <h3>Void Burger</h3>
+                <p>Black sesame bun, plasma-grilled patty, and quantum cheese.</p>
+            </div>
+            <div class="menu-card">
+                <img src="https://via.placeholder.com/200x150?text=Cosmic+Shake" alt="Cosmic Shake">
+                <h3>Cosmic Shake</h3>
+                <p>Starlight-infused ice cream swirl with nebula sprinkles.</p>
+            </div>
+            <div class="menu-card">
+                <img src="https://via.placeholder.com/200x150?text=Astro+Fries" alt="Astro Fries">
+                <h3>Astro Fries</h3>
+                <p>Triple-cooked fries dusted with asteroid salt blend.</p>
+            </div>
+            <div class="menu-card">
+                <img src="https://via.placeholder.com/200x150?text=Galactic+Pie" alt="Galactic Pie">
+                <h3>Galactic Pie</h3>
+                <p>Zero-gravity berry mix with holographic glaze topping.</p>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        &copy; 2025 Starspot Diner. All rights reserved. | Terms | Privacy | Careers
+    </div>
 </body>
 </html>
